@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Default styles for smaller screens (e.g., mobile devices) */
+#navbar {
+    display: none; /* Hide the navbar by default on smaller screens */
+}
+
+#main-doc {
+    margin-left: 0; /* Remove the margin on smaller screens */
+    padding: 20px;
+}
+
+/* Media query for laptops and desktops */
+@media screen and (min-width: 768px) {
+    #navbar {
+        display: flex; /* Display the navbar on laptops and desktops */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    #main-doc {
+        margin-left: 250px;
+        padding: 20px;
+    }
+}
